@@ -1,0 +1,28 @@
+# basic-auth-parser
+
+> HTTP auth header parsing (Basic, Bearer, Digest) with timing-safe credential comparison.
+
+Parses Authorization headers for Basic (base64, first-colon-only split for password safety), Bearer token extraction, and Digest challenge field parsing (quoted-string aware). Includes timing-safe comparison helper (crypto.timingSafeEqual with buffer length guard) and WWW-Authenticate challenge builder for all three schemes.
+
+## API
+
+```typescript
+function parseBasic(header: string): { username, password } | null
+function parseBearer(header: string): string | null
+function parseDigest(header: string): Record<string, string> | null
+function timingSafeCompare(a: string, b: string): boolean
+function buildWWWAuthenticate(scheme, options?): string
+```
+
+## Install
+
+```bash
+npm install basic-auth-parser
+```
+
+## Limits
+
+- Digest parsing extracts fields only (no response verification)
+- No schema negotiation (parse one scheme per call)
+
+Part of the Ferrow open-source toolkit: https://github.com/Ruzylo-cloud/ferrow-toolkit — sponsored by https://ferrow.ai
