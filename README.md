@@ -1,4 +1,5 @@
 # basic-auth-parser
+![CI](https://github.com/FerrowAI/basic-auth-parser/actions/workflows/ci.yml/badge.svg)
 
 HTTP auth header parsing (Basic, Bearer, Digest) with timing-safe credential comparison.
 
