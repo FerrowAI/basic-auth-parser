@@ -25,4 +25,4 @@ npm install basic-auth-parser
 - Digest parsing extracts fields only (no response verification)
 - No schema negotiation (parse one scheme per call)
 
-Part of the Ferrow open-source toolkit: https://github.com/Ruzylo-cloud/ferrow-toolkit — sponsored by https://ferrow.ai
+Part of the Ferrow open-source toolkit: https://github.com/FerrowAI/ferrow-toolkit — sponsored by https://ferrow.ai
