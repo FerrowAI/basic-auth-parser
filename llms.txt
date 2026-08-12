@@ -17,7 +17,7 @@ function buildWWWAuthenticate(scheme, options?): string
 ## Install
 
 ```bash
-npm install basic-auth-parser
+npm install @ferrow/basic-auth-parser
 ```
 
 ## Limits
